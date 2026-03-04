@@ -1,0 +1,113 @@
+/* * {
+    outline: 2px solid blue;
+} */
+
+html {
+    width: auto;
+    height: auto;
+}
+
+#picture1 {
+    /* Centering an image and buttons needs width, margin left and right set to auto, and display block */
+    display: block; 
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Margin left and right is just moving with the webpage */
+}
+
+img {
+    max-width: 400px;
+    max-height: 500px;
+   
+}
+
+header {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+#container1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    width: 500px;
+    margin-left: 20px;
+}
+
+h2 {
+    margin-right: 20px;
+    font-size: 20px;
+    align-self: center;
+    
+}
+
+
+p {
+    text-align: left;
+}
+
+
+/*nav{
+    display: flex; 
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto; */
+    /* text-align: center; */
+/*}*/
+
+#container2 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style:none
+
+}
+
+main {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+#about {
+    margin: 50px 30px 20px 30px;
+    text-align: center;
+}
+
+#instructions {
+    margin: 50px 30px 20px 30px;
+    text-align: center;
+}
+
+footer {
+    margin: 20px 30px 40px 30px;
+}
+
+#twitter-logo {
+    height: 20px;
+}
+
+#linkedin-logo {
+    height: 20px;  
+}
+
+#github-logo {
+    height: 20px;
+}
+
+.container3 figure{
+    display: flex;
+
+}
+
+.social-container ul {
+    display: flex;
+    flex-direction: row;
+    list-style:none
+
+}
