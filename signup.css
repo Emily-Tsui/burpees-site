@@ -35,4 +35,11 @@ body {
     padding: 10px;
     border-radius: 0 20px 20px 0;
     box-sizing: border-box; /* Border edges working on 1 corner, wrapper is bigger than the window. Apply border box so all borders and paddings will be created inwards. Border edges should now be visible. */
+
+    /* Center the content using flex box*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
