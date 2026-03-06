@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --text-color: #332F1F;
+    --accent-color: #7477AA;
+    --base-color: white;
+    --input-color: #F3F0FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    font-family: Lato, Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+    color: var(--text-color);
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(pink-background.jpg);
+    background-size: cover; /* cover shoes entire image */
+    background-position: right;
+    overflow: hidden; /* set to hidden to make sure this is not a scrollable website */
+}
+
+.wrapper {
+    background-color: var(--base-color);
+    height: 100vh;
+    max-width: 650px;
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    box-sizing: border-box; /* Border edges working on 1 corner, wrapper is bigger than the window. Apply border box so all borders and paddings will be created inwards. Border edges should now be visible. */
+}
