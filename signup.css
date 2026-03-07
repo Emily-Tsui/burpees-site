@@ -2,15 +2,15 @@
 
 :root {
     --text-color: #332F1F;
-    --accent-color: #7477AA;
+    --accent-color: #90817C;
     --base-color: white;
-    --input-color: #F3F0FF;
+    --input-color: #FFD4C4;
 }
 
 * {
     margin: 0;
     padding: 0;
-
+    /* outline: 2px solid blue; */
 }
 
 html {
@@ -59,6 +59,53 @@ form {
     gap: 10px; /* Organizes layout inside the form */
 }
 
-form > div { /* Direct children of the form* are the four containers/
+form > div { /*Direct children of the form* are the four containers, doing below will turn it into a flex box layout to apply some flexbox properties to the flexbox layout*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
+svg {
+    fill: white;
+}
+
+form label {
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: var(--accent-color);
+    /* fill: var(--base-color); Control color of SVG elements */
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    box-sizing: border-box; /* To help maintain consistent size*/
+    flex-grow: 0.5;
+    min-width: 0;
+    height: 50px; /* Same size as the labels. */
+    padding: 1em; /*Using box-sizing border box b/c this padding would have changed the total height of the input*/
+    font-size: 12pt;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid var(--input-color); /*Makes border invisible by matching the background-color below. Prevents the hover from transitioning border color growing at the edges, so we change border-color to the accent color down in the hover section*/
+    background-color: var(--input-color);
+    border-left: none;
+    transition: 150ms ease; /* Makes it smoother. */
+}
+
+form input:hover { /*pseudo class*/
+    border-color: var(--accent-color);
+}
+
+form input:focus { /*to prevent the field from being highlighted blue when selected*/
+    outline: none;
+    border-color: var(--text-color);
+}
+
+/* Will only change color one label at a time instead of all using the > */
+/* Input and label are on the same hierarchy in HTML; selecting parent div inside we take the label. */
+div:has(input:focus) > label{ 
+    background-color: var(--text-color); 
 }
