@@ -105,7 +105,20 @@ form input:focus { /*to prevent the field from being highlighted blue when selec
 }
 
 /* Will only change color one label at a time instead of all using the > */
-/* Input and label are on the same hierarchy in HTML; selecting parent div inside we take the label. */
+/* Input and label are on the same hierarchy in HTML; selecting parent div inside we can take the label. */
 div:has(input:focus) > label{ 
     background-color: var(--text-color); 
+}
+
+form button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 100px;
+    padding: 0.85em 4em; /* em = font size of element; 0.85 = 85% of the font size, 4em = 4 x the font size */
+    background-color: var(--accent-color);
+    color: var(--base-color);
+    font: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
 }
