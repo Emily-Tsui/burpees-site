@@ -121,4 +121,13 @@ form button {
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
+    transition: 150ms ease; /*Makes the button:hover color smoother.*/
+}
+
+form button:hover {
+    background-color: var(--text-color);
+}
+
+form button:focus {
+    outline: none; /*Will prevent button from being highlighted*/
 }
