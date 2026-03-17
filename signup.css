@@ -148,3 +148,7 @@ form div.incorrect label{
 form div.incorrect input { /*Increasing specificity that is greater than the above form input:hover*/
     border-color: #f06272;
 }
+
+#error-message {
+    color: #f06272;
+}
